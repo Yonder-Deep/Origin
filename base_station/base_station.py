@@ -51,6 +51,7 @@ class BaseStation(threading.Thread):
         self.out_q = out_q
         self.manual_mode = True
         self.time_since_last_ping = 0.0
+        self.download_data = False  # toggle for if downloading data
 
         # Get all non-default callable methods in this class
         self.methods = [m for m in dir(BaseStation) if not m.startswith(
@@ -161,6 +162,17 @@ class BaseStation(threading.Thread):
             self.radio.write(str.encode(
                 "start_mission(" + str(mission) + ")\n"))
             self.log('Sending task: start_mission(' + str(mission) + ')')
+
+    def download_data(self):
+        """ Tells AUV to download data """
+
+        if not self.connected_to_auv:
+            self.log(
+                "Cannot download data, not connected to AUV.")
+        else:
+            self.radio.write(str.encode("download_data()\n"))
+            self.log("Sending task: download_data()")
+            self.download_data = True
 
     def run(self):
         """ Main threaded loop for the base station. """
