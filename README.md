@@ -9,7 +9,7 @@ The codebase is split among two machines:
 ## Style Guidlines
 Development will be done in Python3 using the [PEP8](https://pep8.org) style guidelines (VSCode w/ Python extension strongly encouraged).
   * Uses spaces (4 per indentation) instead of tabs.
-  * Utilizes the [autopep8](https://pypi.org/project/autopep8/0.8/extension) for automatic formatting.
+  * Utilizes the [autopep8](https://pypi.org/project/autopep8/) for automatic formatting.
 
 Feel free to use the included settings.json file for VSCode development
   * Automatically enables autopep8 functionality with VSCode
