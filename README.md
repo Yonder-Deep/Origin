@@ -7,7 +7,7 @@ The codebase is split among two machines:
   * Origin (an AUV with a Raspberry Pi 3 running Raspbian)
 
 ## Style Guidlines
-Development will be done in Python3 using the [PEP8](https://pep8.org) style guidelines (VSCode strongly encouraged).
+Development will be done in Python3 using the [PEP8](https://pep8.org) style guidelines (VSCode w/ Python extension strongly encouraged).
   * Uses spaces (4 per indentation) instead of tabs.
   * Utilizes the [autopep8](https://pypi.org/project/autopep8/0.8/extension) for automatic formatting.
 
