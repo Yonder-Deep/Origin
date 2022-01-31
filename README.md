@@ -116,7 +116,7 @@ Software Development
 * Mathematics-Computer Science
 * UCSD Graduation: 2021
 
-Aleksa Stamenkovic
+Aleksa Stamenkovic,
 Software Development
 * Computer Science
 * UCSD Graduation: 2023
